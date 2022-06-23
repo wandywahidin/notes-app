@@ -3,6 +3,7 @@ import { getInitialData } from "../utils";
 import NotesBody from "./NotesBody";
 import NotesHeader from "./NotesHeader";
 import Swal from "sweetalert2";
+import NotesFooter from "./NotesFooter";
 
 export class NotesApp extends Component {
   constructor(props) {
@@ -96,6 +97,7 @@ export class NotesApp extends Component {
       <div className="container">
         <NotesHeader search={this.onSearch}/>
         <NotesBody Data={this.state.Data} addNotes={this.onAddNotes} onDelete={this.onDeleteHandler} onArsip={this.onArsipHandler} search={this.state.keyword}/>
+        <NotesFooter/>
       </div>
     );
   }

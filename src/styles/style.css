@@ -164,6 +164,12 @@ input::placeholder, textarea::placeholder {
   background-color: green;
 }
 
+.NotesFooter {
+  text-align: center;
+  margin: 20px 0 0 0;
+
+}
+
 @media only screen and (max-width: 600px) {
   .NotesHeader h1 {
     font-size: 1.5em;
