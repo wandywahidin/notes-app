@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #111927;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+  background-repeat: no-repeat;
+  color: white;
+}
+
+input, textarea {
+  padding: 12px;
+  margin: 12px 0;
+  font-family: 'Inter', sans-serif;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+textarea {
+  height: 150px;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aaa;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 20px auto;
+}
+
+.NotesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid gray;
+  padding-bottom: 10px;
+}
+
+.NotesBodyInput {
+  width: 40%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.NotesBodyInput .notes-input {
+  display: flex;
+  flex-direction: column;
+}
+.NotesBodyInput p {
+  margin-top: 10px;
+  font-size: 0.8em;
+  text-align: end;
+}
+.btn-input {
+  padding: 8px;
+  margin: 12px 0;
+  font-size: 1em;
+  background-color: rgb(26, 184, 105);
+  border:rgb(26, 184, 105) ;
+  border-radius: 5px;
+  color: white;
+}
+.btn-input:hover {
+  background-color: green;
+}
+
+.NotesBodyAktif {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.NotesAktif__body {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+.NotesBodyArsip {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.NotesArsip__body {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.Item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31%;
+  padding: 20px;
+  margin: 15px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.ItemHeader {
+  margin: 0 0 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+.ItemHeader h1 {
+  font-size: 1.5em;
+}
+.ItemBody {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.ItemButton {
+  display: flex;
+}
+.btn-delete {
+  padding: 5px 5px;
+  margin: 0 10px 0 0;
+  color: white;
+  background: rgba(215, 30, 30, 0.5);
+  border: rgba(215, 30, 30, 0.5);
+  border-radius: 10%;
+}
+.btn-delete:hover {
+  background-color: red;
+}
+.btn-aktif {
+  padding: 5px 5px;
+  margin: 0 10px 0 0;
+  color: white;
+  background-color: rgb(26, 184, 105);
+  border: rgb(26, 184, 105);
+  border-radius: 10%;
+}
+.btn-arsip {
+  padding: 5px 5px;
+  margin: 0 10px 0 0;
+  color: white;
+  background-color: rgb(26, 184, 105);
+  border: rgb(26, 184, 105);
+  border-radius: 10%;
+}
+
+.btn-aktif:hover, .btn-arsip:hover {
+  background-color: green;
+}
+
+@media only screen and (max-width: 600px) {
+  .NotesHeader h1 {
+    font-size: 1.5em;
+    margin: 0 3px;
+  }
+  .NotesBodyInput {
+      width: 80%;
+      margin: 20px auto;
+  }
+  .NotesAktif__body {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+  }
+  .Item {
+      width: 90%;
+  }
+}
